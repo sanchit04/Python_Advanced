@@ -89,6 +89,13 @@ print(tuple1.index("l")) #OP -> 2 (Gives the first index of occurence for the in
 # ValueError: tuple.index(x): x not in tuple
 
 # Converting tuple to a list
-
 list1=list(tuple1)
 print(list1) # OP -> ['h', 'e', 'l', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd']
+print(type(list1)) #OP -> <class 'list'>
+
+# Converting list to a tuple
+tuple1=tuple(list1)
+print(tuple1) # OP -> ('h', 'e', 'l', 'l', 'l', 'o', 'w', 'o', 'r', 'l', 'd')
+print(type(tuple1)) # OP -> <class 'tuple'>
+
+
