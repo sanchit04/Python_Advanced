@@ -1,0 +1,9 @@
+{
+    "name": "Sanchit",
+    "age": "32",
+    "has_kids": false,
+    "address": {
+        "p_address": "kalwa",
+        "c_addrss": "thane"
+    }
+}
