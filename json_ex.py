@@ -13,6 +13,7 @@ EG JSON OBJECT:
 "addresses":{"current_address":"Piramal Vaikunth","permanent_address":"Shree Kedar"}
 }
 """
+# JSON DUMP AND DUMPS IS USED FOR ENCODING or SERIALIZATION of PYTHON DICT
 
 # CONVERT PYTHON DICT TO JSON STRING
 import json
