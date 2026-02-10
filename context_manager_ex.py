@@ -13,7 +13,7 @@ finally:
 with open('file.txt','w') as f:
     f.write("HELLO WORLD")
 
-# WRITING CONTEXT MANAGER USING CLASS
+# CREATE CONTEXT MANAGER USING CLASS
 # __enter__ and __exit__ magic method are responsible for context manager!
 class ManagedFile:
     def __init__(self,file_name):
@@ -34,6 +34,21 @@ class ManagedFile:
 
 with ManagedFile('file.txt') as f:
     f.write('Hello')
+
+# CREATING CONTEXT MANAGER FROM A FUNCTION:
+
+from contextlib import contextmanager
+
+@contextmanager
+def open_managed_file(filename):
+    f=open(filename,'w')
+    try:
+        yield f
+    finally:
+        f.close()
+
+with open_managed_file('abc.txt') as f:
+    f.write("CONTEXT MGR AS AFUNCTION")
 
 
 
